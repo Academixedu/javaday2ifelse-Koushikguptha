@@ -5,29 +5,36 @@ import java.util.Scanner;
 public class StudentGradeEvaluation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-       
-        
-
-        
-        System.out.print("Enter your name: ");
-        String str = scanner.nextLine();
-        System.out.println("Name: "+str);
-
-        System.out.println("Enter your age");
+        String name = scanner.next();
         int age = scanner.nextInt();
-        System.out.println("Age: "+age);
+        int score = scanner.nextInt();
+        String grade ;
+        scanner.close(); // Close the scanner
 
-        System.out.println("Enter your exam score");
-        int grade = scanner.nextInt();
-        System.out.println("Score" +grade);
+        if (score >= 90) {
+            grade = "A";
+            //System.out.println("A");
+        } else if (score >= 80) {
+            grade = "B";
+           // System.out.println("B");
+        } else if (score >= 70) {
+            grade = "C";
+         //   System.out.println("C");
+        } else if (score >= 60) {
+            grade = "D";
+           // System.out.println("D");
+        } else {
+            grade ="Fail";
+        }
 
-        String sr=scanner.nextLine();
-        System.out.println("Grade: A"+sr);
-
-        
-        
-
-       
+        System.out.println("name: " + name);
+        System.out.println("age: " + age);
+        System.out.println("score: " + score);
+        System.out.println("grade: " + grade);
     }
 }
+
+        
+        
+
+       
