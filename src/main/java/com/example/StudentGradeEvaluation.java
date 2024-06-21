@@ -6,21 +6,26 @@ public class StudentGradeEvaluation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Prompt the user to enter their name
+       
+        
+
+        
         System.out.print("Enter your name: ");
-        
+        String str = scanner.nextLine();
+        System.out.println("Name: "+str);
 
-        // Prompt the user to enter their age
-        
+        System.out.println("Enter your age");
+        int age = scanner.nextInt();
+        System.out.println("Age: "+age);
 
-        // Prompt the user to enter their exam score
-        
+        System.out.println("Enter your exam score");
+        int grade = scanner.nextInt();
+        System.out.println("Score" +grade);
 
-        // Determine the grade
-        String grade;
-        
+        String sr=scanner.nextLine();
+        System.out.println("Grade: A"+sr);
 
-        // Print the student's details
+        
         
 
        
