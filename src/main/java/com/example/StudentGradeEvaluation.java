@@ -9,7 +9,7 @@ public class StudentGradeEvaluation {
         int age = scanner.nextInt();
         int score = scanner.nextInt();
         String grade ;
-        scanner.close(); // Close the scanner
+        scanner.close(); 
 
         if (score >= 90) {
             grade = "A";
